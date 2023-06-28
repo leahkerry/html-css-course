@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Test tree layout</title>
+    <style>
+        p {
+            margin-top:0;
+            margin-bottom:5px;
+            font-family: Roboto;
+        }
+        .profile-box{
+            display:inline-block;
+            vertical-align:top;
+            width:100;
+            box-shadow: 0px 0px 9px black;
+            margin-top:15px;
+            margin-bottom:10px;
+        }
+        .thumbnail-img{
+            width:100%;
+            height:250px;
+            display:block;
+            object-fit:cover;
+        }
+        .thumbnail-row{
+            margin-bottom:10px;
+        }
+        .name-row{
+            font-weight:bold;
+            font-size:22px;
+        }
+        .text-info{
+            margin-left:7px;
+            margin-right:7px;
+            margin-bottom:10px;
+        }
+        .nativity-img{
+            width:30px;
+            border-radius:15px;
+            
+        }
+        .nativity-pic{
+            display:inline-block;
+            vertical-align:top;
+            margin-right:5px;
+            
+        }
+        .nativity-status{
+            margin-top:5px;
+            display:inline-block;
+        }
+        .nativity-row{
+            margin-bottom:10px;
+        }
+        .add-button{
+            background-color:rgb(0, 124, 226);
+            border:none;
+            border-radius:5px;
+            color:white;
+            padding-top:12px;
+            padding-bottom:12px;
+            padding-left:25px;
+            padding-right:25px;
+            font-size:15px;
+            transition: opacity .25s;
+        }
+        .add-button:hover{
+            opacity:0.7;
+            cursor:pointer;
+        }
+        .add-button:active{
+            opacity:0.5;
+        }
+        .nativity-txt{
+            color:gray;
+        }
+        .tree-grid{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tree-grid">
+        <div class="profile-box">
+            <div class="thumbnail-row">
+                <img class="thumbnail-img" src="trees-practice-pics/willow.jpg">
+            </div>
+            <div class="text-info">
+                <div>
+                    <p class="name-row">Willow</p>
+                </div>
+                <div class="nativity-row">
+                    <div class="nativity-pic">
+                        <img class="nativity-img" src="trees-practice-pics/check.png">
+                    </div>
+                    <div class="nativity-status">
+                        <p class="nativity-txt">Native in your area </p>
+                    </div>
+                </div>
+                <div class="button-row">
+                    <button class="add-button">Add Tree</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="profile-box">
+            <div class="thumbnail-row">
+                <img class="thumbnail-img" src="trees-practice-pics/chestnut.jpg">
+            </div>
+            <div class="text-info">
+                <div>
+                    <p class="name-row">Chestnut</p>
+                </div>
+                <div class="nativity-row">
+                    <div class="nativity-pic">
+                        <img class="nativity-img" src="trees-practice-pics/exclamation-mark.png">
+                    </div>
+                    <div class="nativity-status">
+                        <p class="nativity-txt">Endangered </p>
+                    </div>
+                </div>
+                <div class="button-row">
+                    <button class="add-button">Add Tree</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="profile-box">
+            <div class="thumbnail-row">
+                <img class="thumbnail-img" src="trees-practice-pics/tree-of-heaven.jpg">
+            </div>
+            <div class="text-info">
+                <div>
+                    <p class="name-row">Tree of Heaven</p>
+                </div>
+                <div class="nativity-row">
+                    <div class="nativity-pic">
+                        <img class="nativity-img" src="trees-practice-pics/x.jpg">
+                    </div>
+                    <div class="nativity-status">
+                        <p class="nativity-txt">Invasive </p>
+                    </div>
+                </div>
+                <div class="button-row">
+                    <button class="add-button">Add Tree</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="profile-box">
+            <div class="thumbnail-row">
+                <img class="thumbnail-img" src="trees-practice-pics/willow.jpg">
+            </div>
+            <div class="text-info">
+                <div>
+                    <p class="name-row">Willow</p>
+                </div>
+                <div class="nativity-row">
+                    <div class="nativity-pic">
+                        <img class="nativity-img" src="trees-practice-pics/check.png">
+                    </div>
+                    <div class="nativity-status">
+                        <p class="nativity-txt">Native in your area </p>
+                    </div>
+                </div>
+                <div class="button-row">
+                    <button class="add-button">Add Tree</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
